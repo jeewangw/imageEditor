@@ -1,0 +1,34 @@
+*{
+	font-family: 'Raleway', sans-serif;
+}
+
+.tools{
+	float: left;
+	width: 30%;
+	text-align: left;
+}
+
+.img{
+	width:30%;
+	height: auto;
+	padding-left: 10px;
+}
+
+.editor{
+	width: 95%;
+	height: auto;
+}
+
+body{
+	text-align: center;
+}
+
+.canvas-container{
+	position: absolute;
+    width: 800px;
+    height: 400px;
+    left: 300px !important;
+    top: 0px;
+    touch-action: none;
+    user-select: none;
+}

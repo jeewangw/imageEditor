@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Image Editor</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="caman.full.min.js"></script>
+	<script type="text/javascript" src="fabric.js"></script>
+</head>
+<body>
+	<h1 class="text-center p-3 mb-2 bg-info text-white">Photo Editor</h1>
+	<div class="editor ml-2 d-flex justify-content-around">
+
+		<!-- Tools -->
+		<div class="tools">
+			<div class="pb-2">
+			<button id="save" type="button" class="btn btn-primary">Save</button>
+			<button id="reset" type="button" class="btn btn-danger">Reset</button>
+			</div>
+			<input class="pb-2" type="file" id="load"/>
+
+			<p>
+				<label for="brightness">Brightness</label>
+				<input id="brightness" type="range" min=-100 max=100 value=0 name="brightness">
+			</p>
+
+			<p>
+				<label for="vibrance">Vibrance</label>
+				<input id="vibrance" type="range" min=-100 max=100 value=0 name="vibrance">
+			</p>
+
+			<p>
+				<label for="hue">Hue</label>
+				<input id="hue" type="range" min=-100 max=100 value=0 name="hue">
+			</p>
+
+			<p>
+				<label for="gamma">Gamma</label>
+				<input id="gamma" type="range" min=1 max=10 value=0 name="gamma">
+			</p>
+
+			<p>
+				<label for="clip">Clip</label>
+				<input id="clip" type="range" min=-100 max=100 value=0 name="clip">
+			</p>
+
+			<button id="vintage" class="filter">Vintage</button>
+			<button id="lomo" class="filter">Lomo</button>
+			<button id="clarity" class="filter">Clarity</button>
+			<button id="orangePeel" class="filter">Orange Peel</button>
+			<button id="jeevan" class="filter">Jeevan</button>
+
+
+		</div>
+
+		<!-- Editor -->
+		<!-- Canvas --> <!-- <canvas id="c" width="800" height="400"> </canvas> -->
+		<img id="image" class="img" src="">
+
+	</div>
+	<script type="text/javascript" src="script"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
