@@ -7,12 +7,54 @@
 
 	<title>Image Editor</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="caman.full.min.js"></script>
 	<script type="text/javascript" src="fabric.js"></script>
 </head>
 <body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+   <a class="navbar-brand" href="#">
+    <img src="./images/jeevan.png" width="30" height="30" class="d-inline-block align-top animated infinite heartBeat delay-2s" alt="">
+    Jeevan Gyawali,  <span class="typing text-warning"></span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#demo">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#AboutUs">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#resume">Resume</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="../attendence/index.php">My Attendance Sys</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../cycle_run/index.html">My Game</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#PP">Photoshop Projects</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#ContactMe">Contact Me</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 	<h1 class="text-center p-3 mb-2 bg-info text-white">Photo Editor</h1>
 	<div class="editor ml-2 d-flex justify-content-around">
 
@@ -49,20 +91,47 @@
 				<input id="clip" type="range" min=-100 max=100 value=0 name="clip">
 			</p>
 
-			<button id="vintage" class="filter">Vintage</button>
-			<button id="lomo" class="filter">Lomo</button>
-			<button id="clarity" class="filter">Clarity</button>
-			<button id="orangePeel" class="filter">Orange Peel</button>
-			<button id="jeevan" class="filter">Jeevan</button>
+			<button id="vintage" class="filter btn btn-info mb-2" type="button">Vintage</button>
+			<button id="lomo" class="filter btn btn-primary mb-2" type="button">Lomo</button>
+			<button id="clarity" class="filter btn btn-dark mb-2" type="button">Clarity</button>
+			<button id="orangePeel" class="filter btn btn-warning mb-2" type="button">Orange Peel</button>
+			<button id="jeevan" class="filter btn btn-success mb-2 animated infinite heartBeat delay-2s" type="button">Jeevan</button>
 
 
 		</div>
 
 		<!-- Editor -->
 		<!-- Canvas --> <!-- <canvas id="c" width="800" height="400"> </canvas> -->
-		<img id="image" class="img" src="">
+		<img id="image" class="img" src="" height="10">
 
 	</div>
+
+
+		<!--footer-->
+	<footer class="bg-dark pb-2">
+	      <div class="d-flex justify-content-center ">
+	    <ul class="social-network social-circle mt-4">
+	        
+	     <li><a href="https://www.facebook.com/rjgyawali" class="icoFacebook" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+	     
+	     <li><a href="https://www.linkedin.com/in/jeevan-gyawali-ab5502177/" class="icoLinkedin" target="_blank" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+	     
+	     <li><a href="https://play.google.com/store/apps/developer?id=Jeevan+Gyawali&hl=en_US" class="icoLinkedin" target="_blank" title="Google Play Store"><i class="fab fa-google-play"></i></a></li>
+	     
+	     <li><a href="https://www.freecodecamp.org/jeewangw" class="icoLinkedin" target="_blank" title="Free Code Camp"><i class="fab fa-free-code-camp"></i></a></li>
+	     
+	     <li><a href="https://github.com/jeewangw" class="icoLinkedin" target="_blank" title="Github"><i class="fab fa-github"></i></a></li>
+	     
+	    </ul> 
+	    </div>
+
+	  <p class="text-center bg-dark text-white">  © copyright Jeevan Gyawali 2019  </p>
+	</footer>
+
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/1f878bef23.js"></script>
+
 	<script type="text/javascript" src="script"></script>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -70,5 +139,21 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- jQuery library Typed -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+		<script>
+		      $(function() {
+		    "use strict";
+		    $(".typing").typed({
+		      strings: ["a fullstack developer", "a graphic designer" , "a mobile app developer"], //Headlines(Change It)
+		      loop: true,
+		      startDelay: 1e3,
+		      backDelay: 2e3
+		    });
+		    });
+		</script>
+
 </body>
 </html>
